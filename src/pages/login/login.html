@@ -1,0 +1,29 @@
+<ion-content padding class="back">
+  <ion-card>
+    <ion-card-content justify-content-center>
+      <form (ngSubmit)="enterNickname()">
+        <div class="titleicon">
+          <!-- <img src="../../assets/imgs/logo.png" style="display:inline-block"/> -->
+          <img src="../../assets/imgs/logo.png" width="100px" />
+        </div>
+
+        <ion-list>
+          <ion-item >
+            <ion-label floating>Usuário</ion-label>
+            <ion-input type="text" [(ngModel)]="data.nickname" name="nickname" required=""></ion-input>
+          </ion-item>
+          <ion-item class="item-inner">
+              <ion-label floating>Senha</ion-label>
+              <ion-input type="password" required=""></ion-input>
+           </ion-item>
+          <ion-item>
+            <button ion-button full round class="btn" type="submit">Enter</button>
+          </ion-item>
+        </ion-list>
+      </form>
+    </ion-card-content>
+
+  </ion-card>
+
+
+</ion-content>
