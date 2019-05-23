@@ -12,6 +12,7 @@ import * as firebase from 'Firebase';
 export class ChatPage {
   rooms = [];
   ref = firebase.database().ref('chatrooms/');
+  verificar: boolean = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     console.log(this.ref); 
@@ -30,6 +31,10 @@ export class ChatPage {
   }
 
   joinRoom(key) {
+    console.log(key);
+
+    this.verificar = true
+
     this.navCtrl.setRoot(HomePage, {
       key:key,
       nickname:this.navParams.get("nickname")

@@ -41,10 +41,11 @@
   <ion-grid>
     <ion-row>
       <ion-col col-10>
-        <ion-input type="text" placeholder="envie a sua mensagem" [(ngModel)]="data.message" name="message"></ion-input>
+        <ion-input type="text" placeholder="Envie a sua mensagem" [(ngModel)]="data.message" name="message"></ion-input>
       </ion-col>
-      <ion-col col-2 (click)="sendMessage()">
-        <ion-icon name="paper-plane"></ion-icon>
+      <ion-col class="col-botao" col-2 (click)="sendMessage()">
+        <!-- <ion-icon name="paper-plane"></ion-icon> -->
+        <button class="btn-enviar"> enviar </button>
       </ion-col>
     </ion-row>
   </ion-grid>

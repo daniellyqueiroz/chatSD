@@ -110,5 +110,21 @@ page-home {
           margin-left: -27px;
       }
     }
+    .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default{
+      color: #607D8B !important;
+      background-color: transparent;
+    }
+    ion-input, ion-textarea {
+      margin-left: 15px !important;
+    }
+    .col-botao{
+      margin-top: 9px;
+    }
+    .btn-enviar{
+      background: #607D8B;
+      border-radius: 3px;
+      line-height: 2 !important;
+      color: #fff !important;
+    }
   }
   

@@ -1,5 +1,26 @@
 page-lista-chat {
     .btn{
-        background-color: #2fb2cc !important;
+        background-color: #607D8B !important;
+        height: 34px!important;
+    }
+    .tela{
+        background: #d0e8f5;
+    }
+    .item-ios {
+        border-radius: 5px !important;
+        margin-bottom: 3px !important;
+    }
+    .item-ios.item-block .item-inner {
+        padding-right: 8px;
+        padding-right: 8px;
+        border-bottom: 0px !important; 
+    }
+    .card{
+        align-content: center;
+        border-radius: 10px;
+    }
+    .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default{
+        color: #607D8B !important;
+        background-color: transparent;
     }
 }

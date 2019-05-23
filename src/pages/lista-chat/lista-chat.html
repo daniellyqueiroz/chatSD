@@ -1,4 +1,3 @@
-
 <ion-header>
 
   <ion-navbar>
@@ -8,16 +7,19 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="tela">
   <form (ngSubmit)="addRoom()">
-    <ion-list>
+    <ion-card class="card">
       <ion-item>
-        <ion-label floating>Nome da conversa</ion-label>
+        <ion-label floating>Nome do Grupo </ion-label>
         <ion-input type="text" [(ngModel)]="data.roomname" name="roomname" required=""></ion-input>
       </ion-item>
       <ion-item>
-        <button ion-button full round class="btn" type="submit">Adicionar</button>
+        <button ion-button full round class="btn" type="submit">Criar Novo Grupo</button>
       </ion-item>
-    </ion-list>
+    </ion-card>
+    <!-- <ion-list>
+
+    </ion-list> -->
   </form>
 </ion-content>
